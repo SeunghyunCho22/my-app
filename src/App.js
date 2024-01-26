@@ -1,6 +1,6 @@
 import { useState, setToDo } from "react";
 
-function App() {
+export default function App() {
   const [toDo, setToDo] = useState("");
   const [toDos, setToDos] = useState([]);
   const onChange = (event) => setToDo(event.target.value);
@@ -34,4 +34,3 @@ function App() {
     </div>
   );
 }
-export default App;
